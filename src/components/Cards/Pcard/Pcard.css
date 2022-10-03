@@ -1,0 +1,24 @@
+.p-card{
+    height:max-content;
+    width:38rem;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 3px rgba(0,0,0,0.15);
+    padding:3rem;
+    background:#fff;
+    margin: 1rem;
+}
+.p-card img{
+    height:6rem;
+    width:6rem;
+}
+.p-card h2{
+    padding:1rem 0;
+    font-size:var(--font-md);
+    font-family:var(--primary-font);
+    color:var(--dark-h);
+}
+.p-card p{
+    font-size:var(--font-sm);
+    font-family:var(--secondary-font);
+    color:var(--dark-l);
+}

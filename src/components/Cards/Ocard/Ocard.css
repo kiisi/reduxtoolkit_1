@@ -1,0 +1,33 @@
+.o-card{
+    height:30rem;
+    max-width:40rem;
+    position: relative;
+    overflow:hidden;
+    margin-top: 2rem;
+}
+.o-card:hover > .o-card-img{
+    transform:scale(1.4);
+}
+.o-card:hover .o-card-content p{
+    color:#1654CC;
+}
+.o-card-img{
+    height:inherit;
+    width:inherit;
+    transition: all 500ms ease;
+}
+.o-card-content{
+    bottom:0;
+    position: absolute;
+    padding:2rem;
+}
+.o-card-content img{
+    height:6rem;
+    width: 6rem;
+}
+.o-card-content p{
+    font-size:var(--font-sm);
+    font-family: var(--primary-font), sans-serif;
+    color:#eee;
+    font-weight: 500;
+}

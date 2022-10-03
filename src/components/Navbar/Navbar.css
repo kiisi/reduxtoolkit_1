@@ -1,0 +1,22 @@
+.nav{
+    height:8rem;
+    justify-content: space-between;
+    align-items: center;
+    display:flex;
+}
+.nav-items{
+    display:flex;
+    font-size:var(--font-sm);
+}
+.nav-item:not(:last-child){
+    margin-right: 2rem;
+}
+.nav-items .nav-item{
+    font-family: var(--primary-font), sans-serif;
+    font-weight: 400;
+    color:#eee;
+}
+.nav-items .nav-item:hover{
+    color:#1654CC;
+    cursor:pointer;
+}

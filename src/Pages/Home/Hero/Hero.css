@@ -1,0 +1,102 @@
+/* "../../../assets/car.jpg" */
+.hero-wrapper{
+    background:linear-gradient(90deg, rgba(0,0,0,.8), rgba(0,0,0,.3)), url("../../../assets/truck.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hero{
+    width:94%;
+    max-width: 1400px;
+}
+.hero-content-wrapper{
+    width:100%;
+    max-width:50rem;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+}
+.hero-content h1{
+    font-size:var(--font-lg-x);
+    color:#eee;
+    font-family: "Roboto", sans-serif;
+    padding-bottom:1rem;
+    line-height:7rem;
+}
+.hero-content p{
+    font-size:var(--font-sm);
+    color:#eee;
+    font-weight:100;
+    font-family: "Roboto", sans-serif;
+    line-height: 3rem;
+    padding-top:1rem;
+}
+.hero-btn-wrapper{
+    padding:3rem 0;
+}
+.hero-btn{
+    display:flex;
+    height:6rem;
+    padding:.8rem;
+    border-radius:4px;
+    background:#eee;
+    cursor:pointer;
+}
+.hero-btn-input{
+    flex:1;
+    height:100%;
+    background:#fff;
+    display:flex;
+    overflow:hidden;
+    border: 1px solid #aaa;
+    border-radius:4px ;
+}
+.hero-btn-input input{
+    width:100%;
+    border:none;
+    background:#fff;
+    outline:none;
+    font-size: var(--font-sm);
+    color:#222;
+}
+.hero-btn-input input:focus{
+    outline:none;
+}
+.hero-btn-search{
+    display:grid;
+    place-items:center;
+    padding:5px;
+    color:#aaa;
+}
+.hero-btn-action{
+    font-size: 1.6rem;
+    height:100%;
+    width:12rem;
+    display:grid;
+    place-items:center;
+    border-radius:4px;
+    background:#1654CC;
+    margin-left:.5rem;
+    color:#ddd;
+    font-family:var(--secondary-font), sans-serif;
+}
+
+.hero-sub{
+    width:100%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding:1rem 0;
+}
+.hero-sub-text{
+    display:flex;
+}
+.hero-sub-text h1{
+    font-size: var(--font-lg);
+    font-family: var(--primary-font), "sans-serif";
+    color:#eee;
+    margin-right:2rem;
+}
+.hero-sub-text p{
+    font-size: var(--font-sm);
+    color:#eee;
+    font-family: var(--secondary-font), "sans-serif";
+    font-weight:100;
+}

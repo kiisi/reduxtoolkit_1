@@ -1,0 +1,12 @@
+.offersub-wrapper{
+    padding:5rem 0;
+}
+.offersub{
+    width:94%;
+    max-width: 1400px;
+}
+.offersub-content{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
