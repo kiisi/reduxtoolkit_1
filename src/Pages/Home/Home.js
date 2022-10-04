@@ -1,4 +1,5 @@
 import React from 'react'
+import About from './About/About'
 import Hero from './Hero/Hero'
 import Offer from './Offer/Offer'
 import Offersub from './Offersub/Offersub'
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero/>
       <Offer/>
       <Offersub/>
+      <About/>
       <Testimony/>
     </>
   )
