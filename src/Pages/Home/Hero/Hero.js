@@ -33,7 +33,7 @@ const Hero = () => {
                 <span className="material-icons hero-btn-search">
                   search
                 </span>
-                <input value={input} onChange={(e)=>setInput(e.target.value)} type="text" name="trackingId" placeholder="Track Your Package..."/>
+                <input value={input} onChange={(e)=>setInput(e.target.value)} type="text" name="trackingId" placeholder="Track Your Package"/>
               </div>
               <div className="hero-btn-action" onClick={()=> submit()}>Track Package</div>
             </div>

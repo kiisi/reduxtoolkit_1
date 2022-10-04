@@ -55,6 +55,8 @@
     outline:none;
     font-size: var(--font-sm);
     color:#222;
+    padding-right:5px;
+    text-overflow: ellipsis;
 }
 .hero-btn-input input:focus{
     outline:none;
@@ -97,7 +99,7 @@
     font-size: var(--font-sm);
     color:#eee;
     font-family: var(--secondary-font), "sans-serif";
-    font-weight:100;
+    font-weight:400;
 }
 
 @media screen and (max-width:900px){
@@ -105,4 +107,18 @@
         font-size:calc(var(--font-lg) + .5rem);
         line-height:5rem;
     }    
+}
+@media screen and (max-width:425px){
+    .hero-sub-text:first-child{
+        padding-right: 1rem;
+    }
+    .hero-sub-text{
+        flex-direction: column;
+    }
+    .hero-sub-text p br{
+        display:none;
+    }
+    .hero-sub-text h1{
+        margin-right:0;
+    }
 }
