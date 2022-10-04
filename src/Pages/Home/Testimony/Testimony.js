@@ -19,7 +19,7 @@ const Testimony = () => {
         arrows: false
     };
     return (
-        <div className="max-wrapper testimony-wrapper">
+        <div className="testimony-wrapper">
             <div className="testimony">
                 <Slider {...settings}>
                     <div className="testimony-slide">
