@@ -1,12 +1,11 @@
 import React from 'react'
-import navlogo from '../../assets/speedway.png'
 import './Navbar.css';
 
 const Navbar = () => {
     return (
         <nav className="nav">
             <div className="nav-logo">
-                <img src={navlogo} alt="navlogo"height="40"/>
+                <h1>Speedway Movers Delivery Company</h1>
             </div>
             <div className="nav-items">
                 <div className="nav-item">HOME</div>

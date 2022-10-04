@@ -1,0 +1,51 @@
+.testimony-wrapper{
+    padding:5rem 0;
+}
+.testimony{
+    width:94%;
+    max-width: 1400px;
+    background:url("../../../assets/highway.jpg");
+    background-size:cover;
+}
+.slick-slider{
+    margin:0 auto;
+    width:94%;
+    max-width:90rem;
+}
+.testimony-slide{
+    display:grid;
+    place-items:center;
+    padding:8rem 0;
+}
+.testimony-avatar{
+    display:grid;
+    place-items:center;
+    padding-bottom:2rem;
+}
+.testimony-avatar img{
+    height:12rem;
+    width:12rem;
+    border-radius:50%;
+}
+.testimony-content{
+    font-size: var(--font-sm);
+    font-family:var(--secondary-font);
+    text-align:center;
+    font-weight:300;
+    line-height:2.5rem;
+    color:#fff;
+    display:grid;
+    place-items: center;
+}
+.testimony-content p{
+    width:100%;
+    max-width:70rem;
+}
+.testimony-author{
+    font-size: var(--font-sm);
+    font-family:var(--secondary-font);
+    text-align:center;
+    font-weight:400;
+    color:#fff;
+    padding:1rem 0;
+}

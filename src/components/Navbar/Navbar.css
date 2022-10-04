@@ -4,6 +4,12 @@
     align-items: center;
     display:flex;
 }
+.nav-logo h1{
+    font-family: var(--primary-font);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color:#1654CC;
+}
 .nav-items{
     display:flex;
     font-size:var(--font-sm);
@@ -14,9 +20,19 @@
 .nav-items .nav-item{
     font-family: var(--primary-font), sans-serif;
     font-weight: 400;
-    color:#eee;
+    color:#fff;
 }
 .nav-items .nav-item:hover{
-    color:#1654CC;
+    color:#bb416a;
     cursor:pointer;
+}
+
+@media screen and (max-width:900px){
+    .nav{
+        height:100%;
+        padding:2rem 0;
+    }
+    .nav-items{
+        display:none;
+    }
 }
