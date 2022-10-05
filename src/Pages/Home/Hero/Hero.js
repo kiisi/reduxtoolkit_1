@@ -24,7 +24,7 @@ const Hero = () => {
         <Navbar />
         <div className="hero-content-wrapper">
           <div className="hero-content">
-            <h1>Fastest, Safest and best delivery for your goods</h1>
+            <h1>Fastest, Safest And Best Delivery For Your Goods</h1>
             <p>The best choice for the delivery of your packages that require speed and security during delivery and has many other features</p>
           </div>
           <div className="hero-btn-wrapper">
