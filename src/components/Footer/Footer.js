@@ -4,7 +4,7 @@ const Footer = () => {
     let date = new Date();
   return (
     <div className="max-wrapper">
-        <div className="footer">Speedway Movers Delivery Company &copy; {date.getFullYear()} </div>
+      <div className="footer">Speedway International Movers Delivery Company And Security Service &copy; {date.getFullYear()} </div>
     </div>
   )
 }
