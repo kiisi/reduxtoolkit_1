@@ -98,8 +98,9 @@ const Hero = () => {
           </div>
 
           {
-            trackingInfo.package && trackingInfo.package[0].shipment_progress.length <= 0 ? <h1>No Shipment Progress</h1>
+            trackingInfo.package && trackingInfo.package[0].shipment_progress.length <= 0 ? <h1 className="no-shipment-progress">No Shipment Progress</h1>
               :
+              
               trackingInfo.package && trackingInfo.package[0].shipment_progress.map((shp, i) => {
                 return (
                   <div className="s-card"key={i}>

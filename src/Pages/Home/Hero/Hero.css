@@ -180,6 +180,7 @@
     text-align: center;
     font-family: var(--primary-font);
     padding-top:1rem;
+    color:var(--dark-h);
 }
 .r-card-content{
     font-size:1.6rem;
@@ -207,7 +208,13 @@
     word-break: break-word;
     align-items: center;
 }
-
+.no-shipment-progress{
+    margin-top:1rem;
+    text-align: center;
+    background:#fff;
+    font-family:var(--primary-font);
+    color:var(--dark-h);
+}
 /* S card  */
 .s-card{
     width:100%;
