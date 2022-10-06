@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="nav">
             <div className="nav-logo">
-                <h1>Speedway Movers Delivery Company</h1>
+                <h1>Speedway International Movers Delivery Company And Security Service</h1>
             </div>
             <div className="nav-items">
                 <div className="nav-item">HOME</div>
