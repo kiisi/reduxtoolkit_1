@@ -203,7 +203,7 @@
 }
 .r-card-content-row-text{
     padding-left:1.5rem;
-    color:#727272;
+    color:var(--dark-h);
     display:flex;
     word-break: break-word;
     align-items: center;
@@ -249,7 +249,7 @@
 }
 .s-card-content-row-text{
     padding-left:1.5rem;
-    color:#727272;
+    color:var(--dark-h);
     display:flex;
     word-break: break-word;
     align-items: center;
