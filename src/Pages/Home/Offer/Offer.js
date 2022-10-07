@@ -10,7 +10,7 @@ import planeImg from '../../../assets/airplane.jpg'
 
 const Offer = () => {
   return (
-    <div className="max-wrapper offer-wrapper">
+    <div className="max-wrapper offer-wrapper"id="services">
         <div className="offer">
             <div className="offer-header">
                 <h1>What We Offer</h1>

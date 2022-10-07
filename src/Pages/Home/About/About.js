@@ -4,7 +4,7 @@ import deliveryimg from '../../../assets/delivery-2.png'
 
 const About = () => {
   return (
-    <div className="max-wrapper about-wrapper">
+    <div className="max-wrapper about-wrapper"id="about">
         <div className="about">
             <div className="about-content">
                 <h1>About Us</h1>
