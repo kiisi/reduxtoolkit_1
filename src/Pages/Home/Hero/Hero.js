@@ -25,6 +25,7 @@ const Hero = () => {
       .then(response => response.json())
       .then(data => {
         if (data.package.length <= 0) {
+          setLoading(false)
           return Swal.fire({
             title: "Warning",
             text: "Invalid Tracking ID",
@@ -40,6 +41,7 @@ const Hero = () => {
       .then(() => setLoading(false))
       .catch(error => {
         setTrackingInfo(false)
+        setLoading(false)
         Swal.fire({
           title: "Warning",
           text: "Invalid Tracking ID",
@@ -47,7 +49,6 @@ const Hero = () => {
           confirmButtonText: "OK",
           confirmButtonColor: "#0777A1",
         });
-        setLoading(false)
         console.log(error)
       })
   }
