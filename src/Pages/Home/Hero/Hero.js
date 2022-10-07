@@ -12,6 +12,15 @@ const Hero = () => {
 
   // "https://swid.herokuapp.com/"
   function submit() {
+    if (!input) {
+      return Swal.fire({
+        title: "Warning",
+        text: "Invalid Tracking ID",
+        icon: "warning",
+        confirmButtonText: "OK",
+        confirmButtonColor: "#0777A1",
+      });
+    }
     let td = tdRef.current
 
     setLoading(true)
@@ -36,7 +45,6 @@ const Hero = () => {
         }
         td.classList.add("show")
         setTrackingInfo(data)
-        console.log(data)
       })
       .then(() => setLoading(false))
       .catch(error => {
@@ -49,7 +57,7 @@ const Hero = () => {
           confirmButtonText: "OK",
           confirmButtonColor: "#0777A1",
         });
-        console.log(error)
+        console.log("An error occurred")
       })
   }
 
@@ -101,10 +109,10 @@ const Hero = () => {
           {
             trackingInfo.package && trackingInfo.package[0].shipment_progress.length <= 0 ? <h1 className="no-shipment-progress">No Shipment Progress</h1>
               :
-              
+
               trackingInfo.package && trackingInfo.package[0].shipment_progress.map((shp, i) => {
                 return (
-                  <div className="s-card"key={i}>
+                  <div className="s-card" key={i}>
                     <h1>Shipment Progress</h1>
                     <div className="s-card-content">
                       <div className="s-card-content-row">
