@@ -12,14 +12,14 @@ const Hero = () => {
 
   // "https://swid.herokuapp.com/"
   function submit() {
-    if (!input) {
+    if (!input.trim()) {
       return Swal.fire({
         title: "Warning",
         text: "Invalid Tracking ID",
         icon: "warning",
         confirmButtonText: "OK",
         confirmButtonColor: "#0777A1",
-      });
+      }); 
     }
     let td = tdRef.current
 
