@@ -276,11 +276,7 @@
 .card-track-wrapper{
     position:relative;
 }
-.card-track-wrapper img{
-    position:absolute;
-    top:10%;
-    height:16px;
-}
+
 .card-track{
     width:2rem;
     background:#fff;

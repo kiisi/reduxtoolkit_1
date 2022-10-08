@@ -3,7 +3,6 @@ import Navbar from '../../../components/Navbar/Navbar'
 import './Hero.css'
 import Swal from 'sweetalert2'
 import Loader from '../../../components/loader/Loader'
-import circle2 from '../../../assets/circle-dot-regular.svg'
 const Hero = () => {
 
   const [input, setInput] = useState("")
@@ -116,7 +115,6 @@ const Hero = () => {
                   <div className="card-wrapper" key={i}>
                     <div className="card-track-wrapper">
                     <div className="card-track"></div>
-                    <img src={circle2}alt="circle"/>
                     </div>
                     <div className="s-card">
                       <div className="s-card-content">
