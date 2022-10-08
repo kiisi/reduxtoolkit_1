@@ -130,7 +130,7 @@
     height:100%;
     display:none;
     justify-content: center;
-    background:rgba(0, 0, 0, 0.5);
+    background:#fff;
     overflow:overlay;
     position: fixed;
     z-index: 9999;
@@ -174,7 +174,6 @@
     width:100%;
     border-radius: 6px;
     background:#fff;
-    margin:0 auto;
 }
 .r-card h1{
     text-align: center;
@@ -267,4 +266,28 @@
 }
 .trackeroutput-close span{
     color:#fff;
+}
+
+/* Card Track */
+
+.card-wrapper{
+    display:flex;
+}
+.card-track-wrapper{
+    position:relative;
+}
+.card-track-wrapper img{
+    position:absolute;
+    top:10%;
+    height:16px;
+}
+.card-track{
+    width:2rem;
+    background:#fff;
+    height:100%;
+    clip-path: polygon(25% 0, 55% 0, 55% 40%, 100% 40%, 100% 42%, 55% 42%, 55% 100%, 25% 100%);
+}
+.no-shipment-progress-r{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

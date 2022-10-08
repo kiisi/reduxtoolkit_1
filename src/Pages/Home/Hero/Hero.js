@@ -3,6 +3,7 @@ import Navbar from '../../../components/Navbar/Navbar'
 import './Hero.css'
 import Swal from 'sweetalert2'
 import Loader from '../../../components/loader/Loader'
+import circle2 from '../../../assets/circle-dot-regular.svg'
 const Hero = () => {
 
   const [input, setInput] = useState("")
@@ -10,7 +11,6 @@ const Hero = () => {
   const [loading, setLoading] = useState(false)
   let tdRef = useRef()
 
-  // "https://swid.herokuapp.com/"
   function submit() {
     if (!input.trim()) {
       return Swal.fire({
@@ -19,7 +19,7 @@ const Hero = () => {
         icon: "warning",
         confirmButtonText: "OK",
         confirmButtonColor: "#0777A1",
-      }); 
+      });
     }
     let td = tdRef.current
 
@@ -105,31 +105,37 @@ const Hero = () => {
               })
             }
           </div>
-
+          {(trackingInfo.package && trackingInfo.package[0].shipment_progress.length > 0 ) ? <h1 className="no-shipment-progress no-shipment-progress-r">Shipment Progress</h1> : ''}
+          
           {
             trackingInfo.package && trackingInfo.package[0].shipment_progress.length <= 0 ? <h1 className="no-shipment-progress">No Shipment Progress</h1>
               :
 
               trackingInfo.package && trackingInfo.package[0].shipment_progress.map((shp, i) => {
                 return (
-                  <div className="s-card" key={i}>
-                    <h1>Shipment Progress</h1>
-                    <div className="s-card-content">
-                      <div className="s-card-content-row">
-                        <div className="s-card-content-row-icon"><span className="material-icons">trending_up</span></div>
-                        <div className="s-card-content-row-text">{shp.status}</div>
-                      </div>
-                      <div className="s-card-content-row">
-                        <div className="s-card-content-row-icon"><span className="material-icons">calendar_month</span></div>
-                        <div className="s-card-content-row-text">{shp.date}</div>
-                      </div>
-                      <div className="s-card-content-row">
-                        <div className="s-card-content-row-icon"><span className="material-icons">schedule</span></div>
-                        <div className="s-card-content-row-text">{shp.time}</div>
-                      </div>
-                      <div className="s-card-content-row">
-                        <div className="s-card-content-row-icon"><span className="material-icons">location_on</span></div>
-                        <div className="s-card-content-row-text">{shp.location}</div>
+                  <div className="card-wrapper" key={i}>
+                    <div className="card-track-wrapper">
+                    <div className="card-track"></div>
+                    <img src={circle2}alt="circle"/>
+                    </div>
+                    <div className="s-card">
+                      <div className="s-card-content">
+                        <div className="s-card-content-row">
+                          <div className="s-card-content-row-icon"><span className="material-icons">trending_up</span></div>
+                          <div className="s-card-content-row-text">{shp.status}</div>
+                        </div>
+                        <div className="s-card-content-row">
+                          <div className="s-card-content-row-icon"><span className="material-icons">calendar_month</span></div>
+                          <div className="s-card-content-row-text">{shp.date}</div>
+                        </div>
+                        <div className="s-card-content-row">
+                          <div className="s-card-content-row-icon"><span className="material-icons">schedule</span></div>
+                          <div className="s-card-content-row-text">{shp.time}</div>
+                        </div>
+                        <div className="s-card-content-row">
+                          <div className="s-card-content-row-icon"><span className="material-icons">location_on</span></div>
+                          <div className="s-card-content-row-text">{shp.location}</div>
+                        </div>
                       </div>
                     </div>
                   </div>
