@@ -134,7 +134,7 @@
     overflow:overlay;
     position: fixed;
     z-index: 9999;
-    padding: 4rem 1rem;
+    padding: 4rem 5px;
 }
 .trackeroutput-wrapper.show{
     display:flex;
@@ -290,4 +290,9 @@
 .no-shipment-progress-r{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+@media screen and (max-width:768px){
+    .trackeroutput{
+        padding:1rem;
+    }
 }
