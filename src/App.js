@@ -1,15 +1,20 @@
-import React from 'react'
-import Footer from './components/Footer/Footer'
-import ScrollUp from './components/ScrollUp/ScrollUp'
-import Home from './Pages/Home/Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import Cart from './components/Cart'
+import './styles/index.scss'
 
 const App = () => {
   return (
-    <>
-      <Home/>  
-      <Footer/>
-      <ScrollUp/>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   )
 }
 
